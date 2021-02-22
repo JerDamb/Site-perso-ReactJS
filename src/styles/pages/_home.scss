@@ -1,0 +1,113 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+
+  .homeContent {
+    top: 0;
+    bottom: 0; 
+    margin:auto;
+    width: 100%;
+
+    .first-name, .last-name {
+      font-size: $title-size-1;
+      font-family: $font-1;
+      font-weight: bold;
+      color: $white;
+    }
+
+    .first-name {
+      text-transform: uppercase;
+      text-shadow: 4px 4px 0 $color-3;
+    }
+
+    .last-name {
+      margin-bottom: 30px;
+    }
+
+    .separation div {
+      margin: 0 10px 10px 0;
+      height: 4px;
+      width: 120px;
+      border-radius: 2px;
+      background-color: $color-3;
+
+      &:first-child {
+        margin-left: 60px;
+      }
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 1.6rem;
+      color: $white;
+    }
+  }
+}
+
+
+
+.text-bg {
+  ////////////////////////////////////////////////////////
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  // font-family: $font-1;
+  // font-weight: bold;
+  // font-size: 400px;
+  // margin-top: 35%;
+  // color: rgba(46, 46, 46, 0.1);
+  // // transform: translateX(-10%);
+  text-transform: uppercase;
+
+  .marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+
+    .marquee__inner {
+      margin-top: 38%;
+      width: fit-content;
+      display: flex;
+      position: relative;
+      // transform: translate3d(var(--move-initial), 0, 0);
+      animation: marquee 5s linear infinite;
+      // animation-play-state: paused;
+    }
+    .marquee__inner span {
+        font-family: $font-1;
+        font-weight: bold;
+        color: rgba(46, 46, 46, 0.1);
+        // color:red;
+        // color: rgba(46, 46, 46, 0.1);
+        // transform: translateX(-10%);
+        font-size:25rem;
+        padding: 0 2vw;
+
+        &:nth-child(odd){
+          color:transparent;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: rgba(46, 46, 46, 1); 
+        }
+    }
+  }
+  
+  
+  .marquee .marquee__inner {
+    animation-play-state: running;
+  }
+  
+  @keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+  
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+  }
+} //////////////////////////////////////////////////////////
+
+
