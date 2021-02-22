@@ -78,49 +78,49 @@
         // }
 }
 
-.socialNetwork{
-    grid-area: 2;
+// .socialNetwork{
+//     grid-area: 2;
 
-    ul{
-        display:flex;
-        width:264px;
-        padding: 0 14px;
-        width:100%;
-        justify-content: space-around;
+//     ul{
+//         display:flex;
+//         width:264px;
+//         padding: 0 14px;
+//         width:100%;
+//         justify-content: space-around;
 
-        li{
-            font-size: 1.5rem;
-            background: red;
-            color: $color-1;
-            border-radius:50%;
-            padding: .5rem .8rem;
-            transition: .3s;
-            cursor:pointer;
+//         li{
+//             font-size: 1.5rem;
+//             background: red;
+//             color: $color-1;
+//             border-radius:50%;
+//             padding: .5rem .8rem;
+//             transition: .3s;
+//             cursor:pointer;
 
-            a:visited{
-                color: $color-1;
-            }
+//             a:visited{
+//                 color: $color-1;
+//             }
 
-            &:hover{
-                background-color: blue;
-            }
-        }
-    }
-    .signature{
-        margin-top: 2rem;
-        text-align:center;
-        letter-spacing: .1rem;
-        font-size:.7rem;
+//             &:hover{
+//                 background-color: blue;
+//             }
+//         }
+//     }
+//     .signature{
+//         margin-top: 2rem;
+//         text-align:center;
+//         letter-spacing: .1rem;
+//         font-size:.7rem;
 
-        p{
-            color: red;
+//         p{
+//             color: red;
 
-            &:hover{
-                color: blue;
-            }
-        }
-    }
-}
+//             &:hover{
+//                 color: blue;
+//             }
+//         }
+//     }
+// }
 @media screen and (max-width:850px){
     .sidebar{
         display:flex;

@@ -11,6 +11,7 @@ class ProjectList extends Component {
         return (
             <div>
                 <div className="portfolio-content">
+               
                     <div className="left-column"></div>
                     <ul className="radioDisplay">
                         <span></span>
@@ -27,7 +28,7 @@ class ProjectList extends Component {
                                         item={item}
                                     />
                                 )
-                            })
+                            })                         
                         }
                     </div>
                     <div className="separation2"></div>
