@@ -6,7 +6,7 @@ const Navigation = () => {
         <div>
             <div className="sidebar">
                 <div className="navigation">
-                    <div className="menu">Menu</div>
+                    {/* <div className="menu">Menu</div> */}
                         <ul>
                             <li>
                             <NavLink exact to="/" activeClassName="navActive">
