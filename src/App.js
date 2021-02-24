@@ -1,23 +1,29 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Knowledges from './pages/Knowledges';
-import Portfolio from './pages/Portfolio';
-import NotFound from './pages/NotFound';
+import React from "react";
+import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Knowledges from "./pages/Knowledges";
+import Portfolio from "./pages/Portfolio";
+import NotFound from "./pages/NotFound";
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
+  
+  // let location = useLocation();
   return (
     <>
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home}/>
-        <Route path="/competences" component={Knowledges}/>
-        <Route path="/portfolio" component={Portfolio}/>
-        <Route path="/contact" component={Contact}/>
-        <Route component={NotFound}/>
-      </Switch>
-    </BrowserRouter>
+      <BrowserRouter>
+        <AnimatePresence exitBeforeEnter>
+        {/* <Switch location={useLocation} key={useLocation.pathname}> */}
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/competences" component={Knowledges} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/contact" component={Contact} />
+            <Route component={NotFound} />
+          </Switch>
+        </AnimatePresence>
+      </BrowserRouter>
     </>
   );
 };

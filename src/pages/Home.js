@@ -1,9 +1,16 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className="home">
+    <motion.div
+      className="home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Navigation />
       <span className="text-bg">
         {/* <div class="marquee"> */}
@@ -43,7 +50,7 @@ const Home = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,35 +1,58 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-const OtherSkills = () => {
+const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 1, //temps avant l'apparition du premier enfant
+        staggerChildren: 0.2 //temps entre l'apparition de chaque enfant
+      }
+    }
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
+
+const OtherSkills = (props) => {
     return (
-            <div className="otherSkills">
+            <motion.div className="otherSkills" variants={container}
+            initial="hidden"
+            animate="visible">
                 <h3>Autres compétences</h3>
                 <div className="list">
                     <ul>
-                        <li>
+                        <motion.li variants={item}>
                             <span>Anglais Courant</span>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li variants={item}>
                             <span>Github</span>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li variants={item}>
                             <span>Codepen</span>
-                        </li>
+                        </motion.li>
                     </ul>
                     <ul>
-                        <li>
+                        <motion.li variants={item}>
                             <span>Notions de Japonais</span>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li variants={item}>
                             <span>UX Design</span>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li variants={item}>
                             <span>Photoshop</span>
                             {/* <i className="fas fa-check-square">Photoshop</i> */}
-                        </li>
+                        </motion.li>
                     </ul>
                 </div>
-            </div>
+            </motion.div>
     );
 };
 
