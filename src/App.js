@@ -4,7 +4,10 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Knowledges from "./pages/Knowledges";
 import Portfolio from "./pages/Portfolio";
+import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
+
+
 import { AnimatePresence } from "framer-motion";
 
 const App = () => {
@@ -20,6 +23,7 @@ const App = () => {
             <Route path="/competences" component={Knowledges} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
+            <Route path="/test" component={Test} />
             <Route component={NotFound} />
           </Switch>
         </AnimatePresence>

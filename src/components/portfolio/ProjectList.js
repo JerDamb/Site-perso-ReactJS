@@ -10,8 +10,7 @@ class ProjectList extends Component {
         let {projects} = this.state;
         return (
             <div>
-                <div className="portfolio-content">
-               
+                <div className="portfolio-content">   
                     <div className="left-column"></div>
                     <ul className="radioDisplay">
                         <span></span>

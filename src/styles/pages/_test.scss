@@ -1,0 +1,165 @@
+.test {
+    display:flex;
+    .test-container{
+        width:100%;
+        height:100vh;
+        min-height: $min-height;
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        grid-template-rows: 42% 1fr 1fr;
+        grid-template-areas:
+            "experience E"
+            "experience E"
+            "experience E";
+
+        .AutresCompetences{
+            display:grid;
+            grid-area: experience;
+            position:relative;
+            grid-template-rows: 4% 92% 4%;
+            grid-template-areas:
+                "a"
+                "b"
+                "c";
+            // border: 1px solid red;
+        
+
+            .haut{
+                grid-area:a;
+                // background:green;
+            }
+
+            .bas{
+                grid-area:c;
+                // background:blue;
+            }
+
+            .BarreVerticale{
+                z-index:-1;
+                grid-area:b;
+                margin-left: 50%;
+                width:1px;
+                background:$white;
+            }
+        }
+
+        .curriculum{
+            display:grid;
+            overflow:hidden;
+            height:100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            // grid-template-columns: 1fr 1fr;
+            grid-area:b;
+            position:absolute;
+            // border: 1px solid yellow;
+
+            div:nth-child(odd){
+                margin-left:5%;
+                width:40%;
+                text-align: right;
+                // background:red;
+
+                .separations{
+                    margin-left:5%;
+                    margin-top:5px;
+                    width:100%;
+                    height:1px;
+                    background:$white;
+                }
+            }
+
+            div:nth-child(even){
+                width:40%;
+                margin-left:55%;
+                margin-right:5%;
+                // background:blue;
+
+                .separations{
+                    margin-left:-5%;
+                    margin-top:5px;
+                    width:100%;
+                    height:1px;
+                    background:$white;
+                }
+            }
+
+            .exp{
+                h4{
+                    color:$color-3;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    font-size: $font-size-1;
+                }
+                h5{
+                    color:$white;
+                    font-weight: 100;
+                    font-size: $font-size-2;
+                    text-transform: uppercase;
+                }
+                p{
+                    color:$white;
+                    font-weight: 100;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .languagesFrameworks{
+        margin:10%;
+        background:$color-2;
+        border-radius: 8px;
+        display:grid;
+        grid-template-rows: 8% 10px 1fr 10px;
+        grid-template-areas: 
+        "1"
+        "2"
+        "3"
+        "4";
+        
+
+        h3{
+            grid-area:1;
+            height:100%;
+            // transform: translateY(-50%);
+            text-align:center;
+            text-transform: uppercase;
+            font-family: $font-1;
+            font-size: $font-size-1;
+            font-weight: 100;
+            color:$color-3;
+            background:blue;
+        }
+        .separation1{
+            grid-area:2;
+            border: 1px solid blue;
+            background:green;
+            height:100%;
+        }
+
+        .separation2{
+            grid-area:4;
+            background:yellow;
+            height:100%;
+        }
+
+        .languagesFill{
+            grid-area:3;
+            padding:10px;
+            height:100%;
+            background:red;
+            display:flex;
+
+            img{
+                width:8%;
+            }
+
+            .languagesList{
+                width:100%;
+                margin-left:20px;
+                background:blue;
+                color:$white;
+            }
+        }
+    }
+}

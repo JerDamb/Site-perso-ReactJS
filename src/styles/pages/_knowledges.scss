@@ -12,7 +12,7 @@
 
         .languagesFrameworks, .otherSkills, .hobbies {
             background: $color-2;
-            border-radius: 10px;
+            border-radius: 8px;
             margin:25px;
 
             h3{
@@ -28,7 +28,7 @@
 
             .list{
                 color:$white;
-                display:grid;
+                display:flex;
                 grid-template-columns: 1fr 1fr;
                 font-size:$font-size-1;
                 text-align: center;
@@ -37,6 +37,10 @@
 
                 ul li{
                     margin: 20px;
+
+                    img{
+                        width:18%;
+                    }
                 }
             }
 

@@ -12,16 +12,18 @@ const Progress = (props) => {
 
           return (
             <div className="languagesFill">
-              <img className="progressBarImg" src={item.img} alt="icon" />
-              <div key={item.id} className="languagesList">
-                <li className="languagesName">{item.value}</li>
-                <div className="staticBar">
+              <div className="separation1"></div>
+              {/* <img className="progressBarImg" src={item.img} alt="icon" /> */}
+              {/* <div key={item.id} className="languagesList"> */}
+                {/* <li className="languagesName">{item.value}</li> */}
+                {/* <div className="staticBar">
                   <div
                     className="progressBar"
                     style={{ width: progressBar }}
-                  ></div>
-                </div>
-              </div>
+                  ></div> */}
+                {/* </div> */}
+              {/* </div> */}
+              <div className="separation2"></div>
             </div>
           );
         })}

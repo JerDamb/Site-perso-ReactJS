@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Progress from "./Progress";
-import OtherSkills from "./OtherSkills";
 
 class Languages extends Component {
   state = {
