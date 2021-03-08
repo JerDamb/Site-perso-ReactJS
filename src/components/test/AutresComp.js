@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
 
 const AutresComp = () => {
     return (
@@ -16,7 +16,7 @@ const AutresComp = () => {
                 <div className="exp">
                     <h4>SUPINFO master of science</h4>
                     <h5>2014 - 2015</h5>
-                    <div className="separations"></div>
+                    <motion.div initial={{width:'0%'}} animate={{width:'100%'}} transition={{delay:1, duration:2}} className="separations"></motion.div>
                     <p>Mollitia, quae, consectetur vitae cumque iusto nesciunt harum nulla dignissimos beatae officia, ad similique? Saepe repellat tempora quidem dolore earum suscipit fugit maiores vitae odit neque, itaque officia officiis temporibus!</p>
                 </div>
                 <div className="exp">
@@ -28,7 +28,7 @@ const AutresComp = () => {
                 <div className="exp">
                     <h4>BTS SLAM</h4>
                     <h5>2011 - 2013</h5>
-                    <div className="separations"></div>
+                    <motion.div initial={{width:'0%'}} animate={{width:'100%'}} transition={{delay:.5, duration:2}} className="separations"></motion.div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quae, consectetur vitae cumque iusto nesciunt harum nulla dignissimos beatae officia, ad similique? Saepe repellat tempora quidem dolore earum suscipit fugit maiores vitae odit neque, itaque officia officiis temporibus!</p>
                 </div>
                 <div className="exp">

@@ -12,8 +12,8 @@ const Knowledges = () => {
             <Navigation />
             <span className="text-bg">Compétences</span>
             <div className="knowledgesContent">
-                <Languages />
                 <Experience />
+                <Languages />
                 <OtherSkills />
                 <Hobbies />
             </div>

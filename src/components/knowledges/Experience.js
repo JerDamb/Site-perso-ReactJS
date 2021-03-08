@@ -1,9 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Experience = () => {
     return (
         <div className="experience">    
-            <div className="vertical"></div>
+            <motion.div initial={{x:0}} animate={{x:100}} className="vertical"></motion.div>
             <div className="curriculum">
                 <div className="exp">
                     <h4>Apprentissage Javascript, ReactJS, VueJS</h4>

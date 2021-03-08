@@ -10,24 +10,24 @@ const Navigation = () => {
                         <ul>
                             <li>
                             <NavLink exact to="/" activeClassName="navActive">
-                                <div data-hover="Accueil"></div>
+                                <div>Accueil</div>
                             </NavLink>
                             </li>
                             <li>
                             <NavLink exact to="/competences" activeClassName="navActive">
-                                <div data-hover="Compétences"></div>
+                                <div>Compétences</div>
                             </NavLink>
                             </li>
                             <li>
                             <NavLink exact to="/portfolio" activeClassName="navActive">
                                 {/* <i className="fas fa-images"></i> */}
-                                <div data-hover="Portfolio"></div>
+                                <div>Portfolio</div>
                             </NavLink>
                             </li>
                             <li>
                             <NavLink exact to="/contact" activeClassName="navActive">
                                 {/* <i className="fas fa-address-book"></i> */}
-                                <div data-hover="Contact"></div>
+                                <div>Contact</div>
                             </NavLink>
                             </li>
                         </ul>

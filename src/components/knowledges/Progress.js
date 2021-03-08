@@ -5,29 +5,29 @@ const Progress = (props) => {
   return (
     <div className={props.className}>
       <h3>{props.title}</h3>
-      <div>
+      {/* <div className="separation1"></div> */}
+      <div className="containerBars">
         {props.languages.map((item) => {
           let percent = 100;
           let progressBar = (item.perc / percent) * 100 + "%";
 
           return (
             <div className="languagesFill">
-              <div className="separation1"></div>
-              {/* <img className="progressBarImg" src={item.img} alt="icon" /> */}
-              {/* <div key={item.id} className="languagesList"> */}
-                {/* <li className="languagesName">{item.value}</li> */}
-                {/* <div className="staticBar">
+              <img src={item.img} alt="icon" />
+              <div key={item.id} className="languagesList">
+                <li className="languagesName">{item.value}</li>
+                <div className="staticBar">
                   <div
                     className="progressBar"
                     style={{ width: progressBar }}
-                  ></div> */}
-                {/* </div> */}
-              {/* </div> */}
-              <div className="separation2"></div>
+                  ></div>
+                </div>
+              </div>
             </div>
           );
         })}
       </div>
+      {/* <div className="separation2"></div> */}
     </div>
   );
 };
