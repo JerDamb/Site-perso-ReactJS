@@ -42,7 +42,12 @@ export default class Project extends Component {
                                             <i className={icon} key={icon}></i>
                                         )}
                                     </div>
-                                    <div className="button" onClick={this.handleInfo}>---</div>
+                                    <div className="bottom">
+                                        <ul onClick={this.handleInfo}>
+                                            <li classname="prev"><span></span></li>
+                                        </ul>
+                                        <button>Lien</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

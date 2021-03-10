@@ -10,12 +10,9 @@ const Knowledges = () => {
     return (
         <motion.div className="knowledges" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.5}}>
             <Navigation />
-            <span className="text-bg">Compétences</span>
+            {/* <span className="text-bg">Compétences</span> */}
             <div className="knowledgesContent">
-                <Experience />
-                <Languages />
-                <OtherSkills />
-                <Hobbies />
+                
             </div>
         </motion.div>       
     );

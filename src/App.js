@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-// import Knowledges from "./pages/Knowledges";
+import Knowledges from "./pages/Knowledges";
 import Portfolio from "./pages/Portfolio";
 import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
@@ -23,7 +23,7 @@ const App = () => {
             <Route path="/competences" component={Test} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
-            {/* <Route path="/test" component={Knowledges} /> */}
+            <Route path="/test" component={Knowledges} />
             <Route component={NotFound} />
           </Switch>
         </AnimatePresence>
