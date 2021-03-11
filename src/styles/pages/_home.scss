@@ -7,6 +7,18 @@
     bottom: 0; 
     margin:auto;
     width: 100%;
+    overflow: hidden;
+
+    .barres{
+      position:absolute;
+      width:1000px;
+      height:4px;
+      background:$color-3;
+      transform: rotate(-55deg);
+      left:50%;
+      top:50%;
+      box-shadow: 120px 300px 0 0 $color-3;
+    }
 
     .first-name, .last-name {
       font-size: $title-size-1;

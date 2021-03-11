@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Knowledges from "./pages/Knowledges";
 import Portfolio from "./pages/Portfolio";
+import Framer from "./pages/Framer";
 import Test from "./pages/Test";
 import NotFound from "./pages/NotFound";
 
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/contact" component={Contact} />
             <Route path="/test" component={Knowledges} />
+            <Route path="/framer" component={Framer} />
             <Route component={NotFound} />
           </Switch>
         </AnimatePresence>

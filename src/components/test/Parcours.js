@@ -38,16 +38,16 @@ const Parcours = () => {
             <img src="./media/GITlogo.png" alt="github" />
           </motion.div>
           <motion.div variants={item}>
-            <img src="./media/RUlogo.png" alt="ux design" />
-          </motion.div>
-          <motion.div variants={item}>
             <img src="./media/JAPlogo.png" alt="japonais" />
           </motion.div>
           <motion.div variants={item}>
-            <img src="./media/RUlogo.png" alt="codepen" />
+            <img src="./media/uxLogo.png" alt="ux design" />
           </motion.div>
+          {/* <motion.div variants={item}>
+            <img src="./media/RUlogo.png" alt="codepen" />
+          </motion.div> */}
           <motion.div variants={item}>
-            <img src="./media/RUlogo.png" alt="photoshop" />
+            <img src="./media/photoshopLogo.png" alt="photoshop" />
           </motion.div>
       </div>
     </motion.div>

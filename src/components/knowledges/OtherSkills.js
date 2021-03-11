@@ -39,7 +39,7 @@ const OtherSkills = () => {
             <img src="./media/GITlogo.png" alt="github" />
           </motion.li>
           <motion.li variants={item}>
-            <img src="./media/RUlogo.png" alt="ux design" />
+            <img src="./media/uxLogo.png" alt="ux design" />
           </motion.li>
         </ul>
         <ul>
