@@ -100,14 +100,14 @@
         .infosContent {
           grid-area: B;
           display: grid;
-          grid-template-rows: 15% 1fr 8% 8%;
+          grid-template-rows: 2% 15% 1fr 8% 8% 2%;
           grid-template-areas:
             "1"
             "2"
             "3"
             "4";
           .head {
-            grid-area: 1;
+            grid-area: 2;
             // background:green;
             display: flex;
             align-items: center;
@@ -131,7 +131,7 @@
           }
 
           .informations {
-            grid-area: 2;
+            grid-area: 3;
             //   background:purple;
             padding: 8%;
             color: $white;
@@ -140,7 +140,7 @@
           }
 
           .languages {
-            grid-area: 3;
+            grid-area: 4;
             //   background:yellow;
             display: flex;
             justify-content: space-around;
@@ -150,32 +150,34 @@
           }
 
           .bottom {
+            grid-area:5;
             display: flex;
             justify-content: space-around;
             align-items: center;
 
             ul {
-              display: flex;
+              // display: flex;
               cursor: pointer;
               li {
-                list-style: none;
-                width: 50px;
-                height: 50px;
-                background: $color-3;
-                border-radius: 50%;
-                transition: 0.5s;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                list-style: none;
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.03);
+                border-radius: 50%;
+                transition: 0.5s;
 
                 &:hover {
-                  background: red;
+                  background: $color-3;
                 }
 
                 span {
                   position: absolute;
-                  width: 20px;
-                  height: 20px;
+                  margin-left:3px;
+                  width: 10px;
+                  height: 10px;
                   border: 2px solid $white;
                   transform: rotate(-45deg);
                   border-right: none;
@@ -201,16 +203,15 @@
               height: 80%;
               border-radius: 8px;
               color: $black;
-              background: $color-3;
+              background: rgba(255, 255, 255, 0.03);
               border: none;
-              box-shadow: $shadow;
               text-transform: uppercase;
               transition: 0.5s;
               color: $white;
 
               &:hover {
-                background: $white;
-                color: $color-3;
+                background: $color-3;
+                color: $white;
               }
             }
           }

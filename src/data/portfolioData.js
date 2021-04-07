@@ -19,7 +19,7 @@ export const portfolioData = [
   },
   {
     id: 3,
-    name: 'dolorset',
+    name: 'lorem',
     languages: ['javascript','php','css'],
     languagesIcons: ['fab fa-js','fab fa-php','fab fa-css3-alt'],
     source: 'http://www.github.com',
@@ -28,7 +28,7 @@ export const portfolioData = [
   },
   {
     id: 4,
-    name: 'laboriosam',
+    name: 'ipsum',
     languages: ['javascript','php','react'],
     languagesIcons: ['fab fa-js','fab fa-php','fab fa-react'],
     source: 'http://www.github.com',
@@ -37,7 +37,7 @@ export const portfolioData = [
   },
   {
     id: 5,
-    name: 'repudiante',
+    name: 'ipsum',
     languages: ['javascript','css'],
     languagesIcons: ['fab fa-js', 'fab fa-css3-alt'],
     source: 'http://www.github.com',
