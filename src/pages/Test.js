@@ -14,10 +14,12 @@ const Test = () => {
             <span className="text-bg">Compétences</span>
             <div className="test-container">
                 <AutresComp />
+            </div> 
+            <div className="test-collone-droite">
                 <Comp /> 
                 <Parcours />
                 <PasseTemps />
-            </div> 
+            </div>
         </motion.div>
     );
 };

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 
 const Navigation = () => {
+    const [darkMode, setDarkMode] = useState(false)
     return (
         <div>
             <div className="sidebar">
@@ -10,45 +11,39 @@ const Navigation = () => {
                         <ul>
                             <li>
                             <NavLink exact to="/" activeClassName="navActive">
-                                <div>Accueil</div>
+                                <i className="fas fa-home"></i>
+                                Accueil
                             </NavLink>
                             </li>
                             <li>
                             <NavLink exact to="/competences" activeClassName="navActive">
-                                <div>Compétences</div>
+                                <i className="fas fa-clipboard-list"></i>
+                                Compétences
                             </NavLink>
                             </li>
                             <li>
                             <NavLink exact to="/portfolio" activeClassName="navActive">
-                                {/* <i className="fas fa-images"></i> */}
-                                <div>Portfolio</div>
+                                <i className="fas fa-chart-area"></i>
+                                Portfolio
                             </NavLink>
                             </li>
                             <li>
                             <NavLink exact to="/contact" activeClassName="navActive">
-                                {/* <i className="fas fa-address-book"></i> */}
-                                <div>Contact</div>
+                                <i className="fas fa-address-card"></i>
+                                Contact
                             </NavLink>
                             </li>
                         </ul>
-                    </div>
-            
-            {/* <div className="socialNetwork">
-                <ul>
-                    <li>
-                        <a href="/#" target="_blank" rel="noopener noreferrer"><i className="fab fa-codepen"></i></a>
-                    </li>
-                    <li>
-                        <a href="/#" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a href="/#" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-                    </li>
-                </ul>
-                <div className="signature">
-                    <p>corpyright blabla</p>
                 </div>
-            </div> */}
+                <div>
+                    <div className="switchbutton">
+                        <span style={{color: 'yellow'}}>*</span>
+                        <div className="switch-checkbox">
+                            <input type="checkbox" onChange={() => setDarkMode(!darkMode)}/>   
+                        </div>
+                        <span style={{color:"pink"}}>O</span>
+                    </div>
+                </div>
             </div>
         </div>
     );

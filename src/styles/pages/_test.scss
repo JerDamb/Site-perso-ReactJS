@@ -53,6 +53,10 @@
       }
     }
 
+    .test-collone-droite{
+
+    }
+
     .curriculum {
       display: grid;
       overflow: hidden;
@@ -289,6 +293,24 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px){
+  .test{
+    .test-container{  
+      .AutresCompetences{
+        background:red;
+      }
+      .languagesFrameworks{
+        background:green;
+      }
+      .otherSkills{
+        background:yellow;
+      }
+      .hobbiesContainer{
+        background:blue;
       }
     }
   }

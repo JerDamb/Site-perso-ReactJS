@@ -5,6 +5,8 @@ $font-2: 'dosis', sans-serif;
 
 $title-size-1: 6rem;
 $title-size-2: 2rem;
+$title-size-3: 3rem;
+$title-size-4: 4rem;
 
 $font-size-1: 20px;
 $font-size-2: 17px;
@@ -51,7 +53,7 @@ $min-height:95vh;
 body{
     background-color: $color-1;
     // margin: 1rem auto;
-    // max-width: 1200px;
+    // max-width: 100%;
     font-family: $font-1;
     color: $black;
 }
@@ -74,7 +76,7 @@ a:visited{
     color:$black;
 }
 
-.home, .knowledges, .portfolio, .contact{
+.home, .knowledges, .portfolio, .contact, .test{
     display:flex;
 
     @media screen and (max-width: 850px){
@@ -82,7 +84,7 @@ a:visited{
     }
 }
 
-.homeContent, .knowledgesContent, .portfolioContent, .contactContent{
+.homeContent, .knowledgesContent, .portfolio-content, .contactContent, .test-container{
     @media screen and (max-width:850px){
         margin-left: 0 !important;
     }
