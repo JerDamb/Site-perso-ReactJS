@@ -34,29 +34,29 @@ const PasseTemps = () => {
         <ul>
           <motion.li variants={item}>
             <i className="fas fa-language"></i>
-            <span>Apprentissage Japonais</span>
+            <span> Apprentissage Japonais</span>
           </motion.li>
           <motion.li variants={item}>
             <i className="fas fa-book-reader"></i>
-            <span>Lecture</span>
+            <span> Lecture</span>
           </motion.li>
           <motion.li variants={item}>
             <i className="fas fa-running"></i>
-            <span>Course à pied</span>
+            <span> Course à pied</span>
           </motion.li>
         </ul>
         <ul>
           <motion.li variants={item}>
             <i className="fas fa-film"></i>
-            <span>Films</span>
+            <span> Films</span>
           </motion.li>
           <motion.li variants={item}>
             <i className="fas fa-plane"></i>
-            <span>Voyages</span>
+            <span> Voyages</span>
           </motion.li>
           <motion.li variants={item}>
             <i className="fas fa-space-shuttle"></i>
-            <span>Astrophysique</span>
+            <span> Astrophysique</span>
           </motion.li>
         </ul>
       </div>

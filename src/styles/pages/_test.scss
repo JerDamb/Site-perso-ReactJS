@@ -1,11 +1,8 @@
 .test {
   display: flex;
   .test-container {
-    background:blue;
-    width: 100%;
-
-    height:auto;
-    // min-height: $min-height;
+    width: 65%;
+    height:100vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
@@ -118,6 +115,7 @@
   }
 
     .test-collone-droite{
+      width:35%;
       .languagesFrameworks {
         margin: 6%;
         background: $color-2;
@@ -302,19 +300,92 @@
 @media screen and (max-width: 850px){
   .test{
     .test-container{ 
-      height: 1200px; 
+      width:100%;
+      min-height: 1100px; 
+
       .AutresCompetences{
-        background:red;
+        .curriculum{
+          .exp{
+            H4{
+              font-size: $font-size-2;
+            }
+            H5{
+              font-size: $font-size-2;
+            }
+            p{
+              font-size: $font-size-3;
+            }
+          }
+        }
       }
+    }
+    .test-collone-droite{
+      width:100%;
+
       .languagesFrameworks{
-        background:green;
+        .languagesDisplay{
+          h3{
+            font-size: $font-size-2;
+          }
+          .containerBars{
+            .languagesFill{
+              .languagesList{
+                .languagesName{
+                  font-size: $font-size-3;
+                }
+              }
+            }
+          }
+        }
       }
       .otherSkills{
-        background:yellow;
+        h3{
+          font-size: $font-size-2;
+        }
       }
       .hobbiesContainer{
-        background:blue;
+        H3{
+          font-size: $font-size-2;
+        }
+
+        .hobbies{
+          ul{
+            li{
+              i{
+                font-size: $font-size-3;
+              }
+              span{
+                font-size: $font-size-3;
+              }
+            }
+          }
+        }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 540px){
+  .test{
+    .test-container{ 
+      width:100%;
+      min-height: 1400px; 
+
+      .AutresCompetences{
+        .curriculum{
+          .exp{
+            H4{
+              font-size: $font-size-3;
+            }
+            H5{
+              font-size: $font-size-3;
+            }
+          }
+        }
+      }
+    }
+    .test-collone-droite{
+      width:100%;
     }
   }
 }
